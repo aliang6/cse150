@@ -1,6 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=latex 2016.5.22)  5 OCT 2016 15:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  5 OCT 2016 20:13
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **hw2a.tex
 (./hw2a.tex
@@ -152,9 +153,9 @@ LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 *geometry* driver: auto-detecting
-*geometry* detected driver: dvips
+*geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
-* driver: dvips
+* driver: pdftex
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -193,31 +194,52 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 24.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 50.
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 100--104
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 50.
+ [1
+
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 101--105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--108
+Underfull \hbox (badness 10000) in paragraph at lines 105--109
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--116
+Underfull \hbox (badness 10000) in paragraph at lines 111--117
 
  []
 
 [2] (./hw2a.aux) ) 
 Here is how much of TeX's memory you used:
- 1735 strings out of 493015
- 21360 string characters out of 6133377
- 85006 words of memory out of 5000000
- 5291 multiletter control sequences out of 15000+600000
+ 1754 strings out of 493014
+ 21693 string characters out of 6133351
+ 84977 words of memory out of 5000000
+ 5306 multiletter control sequences out of 15000+600000
  9404 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,4n,26p,249b,192s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,4n,26p,316b,192s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmbxti10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmti12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/sy
+mbols/msbm10.pfb>
+Output written on hw2a.pdf (2 pages, 75480 bytes).
+PDF statistics:
+ 39 PDF objects out of 1000 (max. 8388607)
+ 27 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on hw2a.dvi (2 pages, 3700 bytes).

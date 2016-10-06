@@ -24,42 +24,43 @@ Professor Bender
 \item A $\in$ P(A)
 \smallskip
 \\*\uline{Response}
-\\* Sometimes True.
-\smallskip\\*\uline{Example:}
-\\* A: 
-\\* B: 
+\\* \textbf{Always True.} The power set of a set is, by definition, P(S) = $\{A | A \subseteq S\}$. Since A is always a subset of itself, it is among the elements of P(S), which makes the statement $A \in P(A)$ always true. 
+\\*\uline{Example:}
+\\* A: $\varnothing$
+\\* P(A): $\{\varnothing\}$
+\smallskip
 \item A $\subseteq$ P(A)
 \smallskip
 \\*\uline{Response}
-\\* Always True.
-\smallskip
+\\* \textbf{Sometimes True.} The definition of a subset is $A \subseteq B \iff (\forall x, x \in A \implies x in B).$ Since the power set of A is composed of \textit{sets} that are created from the \textit{elements} of A, they are not always comparable. 
 \\*\uline{Example:}
-\\* A: 
-\\* B: 
+\\* A: $\{\varnothing\}$
+\\* P(A): $\{\varnothing \{\varnothing\}\}$
+\\*\uline{Counterexample:}
+\\* A: $\{1\}$
+\\* P(A): $\{ \{1\} \}$
+\smallskip
 \item $(|A| \leq |B|) \implies (A \subseteq B)$
 \smallskip
 \\*\uline{Response}
-\\*Sometimes True.
+\\* \textbf{Sometimes True.} There can be less elements in set A than in set B, but that does not imply that the elements in set A are the same as set B. This statement is false if set A holds less elements than set B ($|A| \leq |B|$) and is disjoint from set B ($A \cap B = \varnothing$).
 \smallskip
 \\*\uline{Example:}
-\\* A: 
-\\* B: 
+\\* A: $\varnothing$ 
+\\* B: \{1\}
 \smallskip
 \\*\uline{Counterexample:}
-\\* A:
-\\* B:
+\\* A: \{1\}\quad
+\\* B: \{2, 3\}\quad
 \item $(A \subseteq B) \implies (|A| \leq |B|)$
 \smallskip
 \\*\uline{Response}
-\\* Sometimes True. 
+\\* \textbf{Always True.} The definition of a subset is $A \subseteq B \iff (\forall x, x \in A \implies x in B).$ Every element of set A has to be an element of set B, meaning that the amount of elements in set A is either less than or equal to the amount of elements in set B.
 \smallskip
 \\*\uline{Example:}
-\\* A: 
-\\* B: 
+\\* A: $\varnothing$\quad$|A| = 0$
+\\* B: $\varnothing$\quad$|B| = 0$
 \smallskip
-\\*\uline{Counterexample:}
-\\* A:
-\\* B:
 \end{enumerate}
 \medskip
 \uline{Problem 2}
@@ -69,26 +70,26 @@ Professor Bender
 \item $A \in B, A \subseteq B,$ and $P(A) \subseteq B$
 \smallskip
 \\*\uline{Example:}
-\\* A: 
-\\* B: 
+\\* A: $\{\varnothing\}$
+\\* B: $\{\varnothing \{\varnothing\}\}$
 \smallskip
 \item $(\mathbb{N} \cap A) \in A, B \subset A,$ and $P(B) \subseteq A$
 \smallskip
 \\*\uline{Example:}
 \\* A: $\{\varnothing\}$
-\\* B: $\{\varnothing \{\varnothing\}\}$
+\\* B: $\varnothing$
 \smallskip
 \item $A \subseteq (P(P(B)) - P(A))$
 \smallskip
 \\*\uline{Example:}
-\\* A: 
-\\* B: 
+\\* A: $\varnothing$
+\\* B: $\varnothing$
 \smallskip
 \item $A \supseteq (P(P(B))-P(A))$
 \smallskip
 \\*\uline{Example:}
-\\* A: 
-\\* B: 
+\\* A: $\{\varnothing\}$
+\\* B: $\varnothing$
 \smallskip
 \end{enumerate}
 \medskip
