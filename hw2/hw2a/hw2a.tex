@@ -34,8 +34,8 @@ Professor Bender
 \\*\uline{Response}
 \\* \textbf{Sometimes True.} The definition of a subset is $A \subseteq B \iff (\forall x, x \in A \implies x in B).$ Since the power set of A is composed of \textit{sets} that are created from the \textit{elements} of A, they are not always comparable. 
 \\*\uline{Example:}
-\\* A: $\{\varnothing\}$
-\\* P(A): $\{\varnothing \{\varnothing\}\}$
+\\* A: $\varnothing$
+\\* P(A): $\{\varnothing\}$
 \\*\uline{Counterexample:}
 \\* A: $\{1\}$
 \\* P(A): $\{ \{1\} \}$
@@ -70,8 +70,8 @@ Professor Bender
 \item $A \in B, A \subseteq B,$ and $P(A) \subseteq B$
 \smallskip
 \\*\uline{Example:}
-\\* A: $\{\varnothing\}$
-\\* B: $\{\varnothing \{\varnothing\}\}$
+\\* A: $\varnothing$
+\\* B: $\{\varnothing\}$
 \smallskip
 \item $(\mathbb{N} \cap A) \in A, B \subset A,$ and $P(B) \subseteq A$
 \smallskip
@@ -101,17 +101,76 @@ Professor Bender
 \item T(S(R)) $\subseteq$ S(T(R))
 \smallskip
 \\*\uline{Response}
-\\*
+\\*\textbf{False}
+\\*Let binary relation R have two elements: 
+\\*\{(0,1)\}.
+\\* The transitive closure of R, T(R), is 
+\\*\{(0,1)\}
+\\*The symmetric closure of the transitive closure of R, S(T(R)), is 
+\\*\{(0,1), (1,0)\}
+\smallskip
+\\*The symmetric closure of R, S(R), is
+\\*\{(0,1), (1,0)\}
+\\*The transitive closure of the symmetric closure of R, T(S(R)), is
+\\*\{(0,1), (1,0), (1,1), (2,2)\}
+\medskip
+\\*\{(0,1), (1,0), (1,1), (2,2)\} $\not\subseteq$ \{(0,1), (1,0)\}
+\\*T(S(R)) $\not\subseteq$ S(T(R)) for every binary relation R.
+
 \item S(T(R)) $\subseteq$ T(S(R))
 \smallskip
 \\*\uline{Response}
-\\*
+\\*I don't know how to prove it, but I do know that the answer involves continuity between closures.
 \end{enumerate}
 \medskip
 \uline{Problem 4}
-\\*\textbf{How many reflextive binary relations are there on S x S? How many symmetric relations? Explain.}
+\\*\textbf{How many reflexive binary relations are there on S x S? How many symmetric relations? Explain.}
 \\*\textit{Bonus:} How many equivalence relations are there on S x S? Explain.
 \smallskip
 \\*\uline{Response}
-\\*
+\\*\textbf{There are 2$^{n^2-n}$ reflexive binary relations on S x S.}
+\\*A binary relation of two sets of length $n$ can be represented as an $n$ x $n$ matrix where 0 represents no ordered pair while 1 represents an ordered pair. There are $n^2$ possible binary relations 
+\\*\begin{tabular}{c|cccccc}
+& 0 & 1 & 2 & ... & $n-1$ & $n$\\
+\hline
+0 & 0/1 & 0/1 & 0/1 & . & 0/1 & 0/1\\
+1 & 0/1 & 0/1 & 0/1 & . & 0/1 & 0/1\\
+2 & 0/1 & 0/1 & 0/1 & . & 0/1 & 0/1\\
+... & . & . & . & . & 0/1 & 0/1\\
+$n-1$ & 0/1 & 0/1 & 0/1 & 0/1 & 0/1 & 0/1\\
+$n$ & 0/1 & 0/1 & 0/1 & 0/1 & 0/1 & 0/1\\
+\end{tabular}
+\medskip
+\\* A binary relation R is reflexive if and only if $\forall x \in S (x,x) \in R$.
+\\*In a matrix this is represented by:
+\\*\begin{tabular}{c|cccccc}
+& 0 & 1 & 2 & ... & $n-1$ & $n$\\
+\hline
+0 & 1 & 0/1 & 0/1 & . & 0/1 & 0/1\\
+1 & 0/1 & 1 & 0/1 & . & 0/1 & 0/1\\
+2 & 0/1 & 0/1 & 1 & . & 0/1 & 0/1\\
+... & . & . & . & . & 0 & 0\\
+$n-1$ & 0/1 & 0/1 & 0/1 & 0/1 & 1 & 0/1\\
+$n$ & 0/1 & 0/1 & 0/1 & 0/1 & 0/1 & 1\\
+\end{tabular}
+\medskip
+\\*The diagonal from the top left to the bottom right represents $n$ elements, meaning that the $2^(n^2-n)$ possible binary relations in a set of length $n$.
+\bigskip
+\\*\textbf{There are 2$^{n+(n^2-n)/n}$ possible symmetric relations on S x S.}
+\\* We start again with the binary relation represented as a matrix. 
+\\*\begin{tabular}{c|cccccc}
+& 0 & 1 & 2 & ... & $n-1$ & $n$\\
+\hline
+0 & 0/1 & 0/1 & 0/1 & . & 0/1 & 0/1\\
+1 & 0/1 & 0/1 & 0/1 & . & 0/1 & 0/1\\
+2 & 0/1 & 0/1 & 0/1 & . & 0/1 & 0/1\\
+... & . & . & . & . & 0/1 & 0/1\\
+$n-1$ & 0/1 & 0/1 & 0/1 & 0/1 & 0/1 & 0/1\\
+$n$ & 0/1 & 0/1 & 0/1 & 0/1 & 0/1 & 0/1\\
+\end{tabular}
+\medskip
+\\* A binary relation R is symmetric if and only if $\forall x,y \in S (x, y) \in R \implies (y,x) \in R$
+\\* A reflexive binary relation can be symmetric if it includes only reflexive ordered pairs, meaning there are at least 2$^n$ possible symmetric binary relations
+\\* Since an ordered pair of a symmetric binary relation from one side of the diagonal formed by the reflexive ordered pairs, implies an ordered pair on the other side of the diagonal, the possible symmetric binary relations is limited to 2$^(n^2 - n)/2$.
+\\* Combining the two, results in the total number of possible symmetric binary relations to be 2$^{n+(n^2-n)/n}$.
 \end{document}
