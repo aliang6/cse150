@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  13 OCT 2016 16:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  18 OCT 2016 21:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**hw2b.tex
-(./hw2b.tex
+**hw3b.tex
+(./hw3b.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
@@ -137,8 +137,8 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (/usr/local/texlive/2016/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks22
-) (./hw2b.aux)
-\openout1 = `hw2b.aux'.
+) (./hw3b.aux)
+\openout1 = `hw3b.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
@@ -195,40 +195,33 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 22.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-./hw2b.tex:27: Misplaced \crcr.
-\endtabular ->\crcr 
-                    \egroup \egroup $\egroup 
-l.27 ...e if $\forall x, x_2, y [(x, y) \in f \and
-                                                   (x_2, y) \in f] \implies ...
+Underfull \hbox (badness 10000) in paragraph at lines 35--50
 
-? 
-./hw2b.tex:27: Emergency stop.
-\endtabular ->\crcr 
-                    \egroup \egroup $\egroup 
-l.27 ...e if $\forall x, x_2, y [(x, y) \in f \and
-                                                   (x_2, y) \in f] \implies ...
-End of file on the terminal!
+ []
 
- 
+[1
+
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./hw3b.aux) ) 
 Here is how much of TeX's memory you used:
- 1728 strings out of 493014
- 21289 string characters out of 6133351
- 80977 words of memory out of 5000000
+ 1732 strings out of 493014
+ 21325 string characters out of 6133351
+ 84977 words of memory out of 5000000
  5289 multiletter control sequences out of 15000+600000
  8698 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,3n,26p,220b,124s stack positions out of 5000i,500n,10000p,200000b,80000s
-./hw2b.tex:27:  ==> Fatal error occurred, no output PDF file produced!
-ist/fonts/type1/public/amsfon
-ts/cm/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symb
-ols/msbm10.pfb>
-Output written on hw2b.pdf (2 pages, 65821 bytes).
+ 27i,4n,26p,451b,111s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8
+.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb>
+Output written on hw3b.pdf (1 page, 62703 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
+ 32 PDF objects out of 1000 (max. 8388607)
+ 22 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

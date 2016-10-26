@@ -15,7 +15,6 @@ Professor Bender
 \end{flushleft}
 \medskip
 \centerline{\uline{Homework 2B}}
-\bigskip\bigskip
 
 \noindent
 \uline{Problem 5}
@@ -24,62 +23,74 @@ Professor Bender
 \item $f(x) = 2x$ \qquad (one-to-one but not onto)
 \smallskip
 \\*\uline{Response}
-\\*
+\\*A function is injective if for every element in the range, there is at most one element in the domain. The domain and range of the function is stated in the problem to be $\mathbb{N}$. The inverse of the function $f(x) = 2x$ is $f(x) = x/2$. There are numbers in the range of the inverse function that are not in the domain of the function meaning that the function is not onto, since surjection requires at least one element in the domain for every element in the range. Everyone even element in the range of the function maps to an element of the domain while every odd element in the range of the function maps to no elements in the domain meaning that the function is one-to-one. 
 \item $f(x) = x + 1$ \qquad (one-to-one but not onto)
 \smallskip
 \\*\uline{Response}
-\\*
-\item $f(x) =$ if $x$ is odd then $x$ - 1, lse $x$ + 1 \qquad (bijective)
+\\*The domain and range of the function is stated in the problem to be $\mathbb{N}$. The inverse of the function is f(x) = x - 1. The function has a domain of natural numbers, but its range includes numbers that are not within the natural number set: when x = 0, f(x) = -1. This means that there is an element in the range of the function that doesn't map to an element in the domain, meaning that the function is not surjective. However, since there's at most one element in the range for every element in the domain, the function is one-to-one, or injective. 
+\item $f(x) =$ if $x$ is odd then $x$ - 1, else $x$ + 1 \qquad (bijective)
 \smallskip
 \\*\uline{Response}
-\\*
+\\*The domain and range of the function is stated in the problem to be $\mathbb{N}$. The inverse of the function is f(x) = if x is even then x + 1, else x -1. The inverse function is identical to the original function. Each element in the range of the function maps to exactly one element in the domain. Every even number in the range maps to one odd number in the domain and every odd number in the range maps to exactly one even number in the domain therefore the function is bijective.
 \end{enumerate}
 \medskip
 \uline{Problem 6}
 \\*\textbf{Show that the product $(a + bi) (c + di)$ of two complex numbers can be evaluated using just three real-number multiplications. You may use a few extra additions}
 \smallskip
 \\*\uline{Response}
-\\* 
-\medskip
-\\*\uline{Problem 7}
-\\*\textbf{Given a fixed function $f: A \to A.$ An element $a \in A$ is called a $fixed point$ of $f$ if $f(a) = a.$ Find the set of fixed points for each of the following functions.}
+\smallskip
+\\*\centerline{(a+b$i$)(c+d$i$)}
+\\*\centerline{ac + ad$i$ + bc$i$ + bd$i^2$}
+\\*\centerline{ac - bd + (ad + bc)$i$}
+\\*\centerline{Four multiplications: ac, bd, ad, and bc}
+\smallskip
+\\*\centerline{ad + bc = (a + b)(c +d) - ac - bd}
+\\*\centerline{ad + bc = ac + ad + bc + bd - ac - bd}
+\\*\centerline{ad + bc = ab + bc}
+\smallskip
+\\*\centerline{ac - bd + [(a + b)(c + d) - ac - bd]$i$}
+\\*\centerline{Only three multiplications: ac, bd, and (a + b)(c+d)}
+\newpage
+\noindent
+\uline{Problem 7}
+\\*\textbf{Given a fixed function $f: A \to A.$ An element $a \in A$ is called a $fixed$ $point$ of $f$ if $f(a) = a.$ Find the set of fixed points for each of the following functions.}
 \begin{enumerate}
 \item $f: A \to A$ where $f(x) = x$
 \smallskip
 \\*\uline{Response}
-\\*
+\\*A = $\mathbb{R}$
 \item $f: \mathbb{N} \to \mathbb{N}$ where $f(x) = x + 1$
 \smallskip
 \\*\uline{Response}
-\\*
+\\*$\varnothing$
 \item $f: \mathbb{N}_6 \to \mathbb{N}_6$ where $f(x) = 2x$ mod 6
 \smallskip
 \\*\uline{Response}
-\\*
+\\*\{0\}
 \item $f: \mathbb{N}_6 \to \mathbb{N}_6$ where $f(x) = 3x$ mod 6
 \smallskip
 \\*\uline{Response}
-\\*
+\\*\{0, 3\}
 \end{enumerate}
 \medskip
 \uline{Problem 8}
-\\*\textbf{Let $f(x) = x^2$ and $g(x,y_ = x + y.$ Find compositions that use the functions $f$ and $g$ for each of the following expressions.}
+\\*\textbf{Let $f(x) = x^2$ and $g(x,y) = x + y.$ Find compositions that use the functions $f$ and $g$ for each of the following expressions.}
 \begin{enumerate}
 \item $(x+y)^2$
 \smallskip
 \\*\uline{Response}
-\\*
+\\*f(g(x, y))
 \item $x^2 + y^2$
 \smallskip
 \\*\uline{Response}
-\\*
+\\*g(f(x), f(x))
 \item $(x+y+z)^2$
 \smallskip
 \\*\uline{Response}
-\\*
+\\*f(g(x, g(y, z)))
 \item $x^2+y^2+z^2$
 \smallskip
 \\*\uline{Response}
-\\*
+\\*g(f(x), g(f(y), f(z)))
 \end{enumerate}
 \end{document}
