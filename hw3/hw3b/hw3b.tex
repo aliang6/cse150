@@ -22,30 +22,108 @@ Professor Bender
 \\*\textbf{You have $10000$ kilograms of pickles. Pickles are $99$ percent water by volume. Water comprises $100$ percent of the mass of the pickle. Time goes by, and you observe that some water has evaporated. Now water comprises only $98$ percent of the volume. What is the weight of the pickles now?}
 \smallskip
 \\*\uline{Response}
-\\*
-\medskip
-\\*\uline{Problem 10}
+\\*The density of water is 1000 kg/m$^3$. The mass of the pickles is given to be 10000 kg. The formula for density is density = mass / volume. Plugging the in the values for density and mass gives us the value for the initial volume:
+\\* 1000 kg/m$^3 = \frac{10000kg}{V/0.99} \rightarrow V = 9.9$m$^3$.
+\\* 
+\bigskip
+
+
+\noindent
+\uline{Problem 10}
 \\*\textbf{Prove the following using mathematical induction:}
 \begin{enumerate}
 	\item \textbf{$2n \leq 2^n$}
+	\medskip
+	\\*\uline{Proof}
+	\medskip
+	\\*We will use induction on n.
+	\bigskip
+	\\*Let predicate P($n$) be $2n \leq 2^n$
+	\bigskip
+	\\*\uline{Base Case: }
+	\\*P(0) is true because $2*0 \leq 2^0 \rightarrow 0 \leq 1$.
+	\bigskip
+	\\*\textit{Inductive Assumption:}
+	\\*Assume P($n$) holds for n =k, ie $2k \leq 2^k$ for some number $k$.
+	\\*\textit{Inductive Step:}
+	\\*If we add 2 to both sides of the inequality we get:
+	\\*$2k + 2 \leq 2^k + 2 \rightarrow 2(k+1) \leq 2^{k+1}$
+	\\*Therefore we established predicate P($k$+1).
+	\bigskip
+	\\*Therefore, by the principle of induction, P($n$) holds for any $n$, and we establish the theorem. 
+	\bigskip
+	
+	
+	
 	\item \textbf{$1+3+5+...+(2n-1)=n^2$}
+	\medskip
+	\\*\uline{Proof}
+	\medskip
+	\\* We will use induction on n.
+	\bigskip
+	\\* Let predicate P($n$) be 1 + 3 + 5 + ... + (2$n$ - 1) = $n^2$.
+	\bigskip
+	\\*\textit{Base Case:}
+	\\*P(1) is true because $2*1 - 1 = 1^2 \rightarrow 1 = 1$.
+	\bigskip
+	\\*\textit{Inductive Assumption:}
+	\\*Assume P($n$) holds for n = k, ie 1 + 3 + 5 + ... + (2$k$ - 1) = $k^2$, for some number $k$.
+	\\*\textit{Inductive Step:}
+	\\*We need to establish P(k+1).
+	\\*If we add 2($k$ + 1) - 1 to both sides of the equation we get:
+	\\*1 + 3 + 5 + ... + (2$k$ -1 ) + [2($k$ + 1) - 1] = $k^2$ + 2($k$ + 1) = $k^2 + 2k + 1$
+	\\* 1 + 3 + 5 + ... + (2$k$ -1 ) + [2($k$ + 1) - 1] = $(k + 1)^2$
+	\\*Therefore we established predicate P(k+1).
+	\bigskip
+	\\*Therefore, by the principles of induction, P($n$) holds for any $n$ and we establish the theorem. 
+	
+	
+	
 	\item \textbf{$1^2+2^2+3^2+...+n^2=\frac{(n)(n+1)(2n+1)}{6}$}
+	\medskip
+	\\*\uline{Proof}
+	\medskip
+	\\*We will use induction on n
+	\bigskip
+	\\*Let P($n$) be $1^2 + 2^2 + 3^2 + ... + n^2 = \frac{(n)(n+1)(2n+1)}{6}$
+	\bigskip
+	\\*\textit{Base Case:}
+	\\* P(1) is true because $1^2 = \frac{(1)(1+1)(2*1+1)}{6} \rightarrow 1 = 1$.
+	\bigskip
+	\\*\textit{Inductive Assumption:}
+	\\*Assume P($n$) holds for n = k, ie $1^2 + 2^2 + 3^2 + ... + k^2 = \frac{(k)(k+1)(2k+1)}{6}$, for some number $k$. 
+	\\*\textit{Inductive Step:}
+	\\*We need to establish P($k$ + 1).
+	\\*If we add $(k+1)^2$ to both sides of the equation we get:
+	\\*$1^2 + 2^2 + 3^2 + ... + k^2 + (k+1)^2 = \frac{(k)(k+1)(2k+1)}{6} + (k+1)^2$
+	\\*$1^2 + 2^2 + 3^2 + ... + k^2 + (k+1)^2 = \frac{2k^3 + 3k^2 + k}{6} + k^2 + 2k + 1$
+	\\*$1^2 + 2^2 + 3^2 + ... + k^2 + (k+1)^2 = \frac{2k^3 + 3k^2 + k + k^2 + 2k + 1}{6}$
+	\\*$1^2 + 2^2 + 3^2 + ... + k^2 + (k+1)^2 = \frac{2k^3 + 4k^2 + 3k + 1}{6}$
+	\\*$1^2 + 2^2 + 3^2 + ... + k^2 + (k+1)^2 = \frac{(k+1)[(k+1) + 1][2(k+1) + 1]}{6}$
+	\\*Therefore, we establish predicate P($k$ + 1).
+	\bigskip
+	\\*Therefore, by the principles of induction, P($n$) holds for any $n$ and we establish the theorem. 
 \end{enumerate}
-\smallskip
-\uline{Response}
-\\*
-\medskip
-\\*\uline{Problem 11}
+\bigskip
+
+
+
+\noindent
+\uline{Problem 11}
 \\*\textbf{You have an $n\times m$ bar of chocolate. Your goal is to separate all of the squares of chocolate. The way that you can break the chocolate is to take a single piece of chocolate (connected component of squares) and break it along one horizontal  or vertical line. What is the minimum number of breaks necessary? Please prove your answer. }
 \smallskip
 \\*\uline{Response}
-\\*
-\medskip
-\\*\uline{Problem 12}
+\\*The minimum number of breaks necessary to separate all of the squares of chocolate is $n x m - 1$ breaks. There are $n \times m$ squares chocolate and the goal is to separate them all, but you already start with one connected piece of chocolate, so you need a minimum of $n \times m - 1$ breaks to get $n \times m$ pieces.
+\bigskip
+
+
+
+\noindent
+\uline{Problem 12}
 \\*\textbf{You have an $n\times n$ checkerboard with an initial set of checkers placed on it. You are allowed to add additional checkers under the following conditions: You can place a checker on a square if two or more neighboring squares also have checkers on them. Neighboring cells are those above, below, to the left and to the right. As we showed in class, there are initial configurations of $n$ checkers that enable the entire board
 to be covered. Prove that no configuration of $n-1$ checkers can let you cover the board.}
 \smallskip
 \\*\uline{Response}
-\\*
-
+\\* The perimeter of an $n \times n$ checkerboard is equal to 4$n$. When a configuration of checkers are placed, their perimeter does not change even when additional checkers are added to the board.
+\\*Therefore, the minimum amount of checkers that are required in an initial configuration is $n$ because the perimeter of $n$ checkers is $4n$. 
 \end{document}
