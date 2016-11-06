@@ -22,9 +22,26 @@ Professor Bender
 \\*\textbf{You have $10000$ kilograms of pickles. Pickles are $99$ percent water by volume. Water comprises $100$ percent of the mass of the pickle. Time goes by, and you observe that some water has evaporated. Now water comprises only $98$ percent of the volume. What is the weight of the pickles now?}
 \smallskip
 \\*\uline{Response}
-\\*The density of water is 1000 kg/m$^3$. The mass of the pickles is given to be 10000 kg. The formula for density is density = mass / volume. Plugging the in the values for density and mass gives us the value for the initial volume:
-\\* 1000 kg/m$^3 = \frac{10000kg}{V/0.99} \rightarrow V = 9.9$m$^3$.
-\\* 
+\\*Collaborated with Ivan Lin
+\\*Let $e$ = percent of evaporated water
+\\* $V$ = Volume of Water and Pickle
+\\* $V_w$ = Volume of Water
+\bigskip
+\\* Equation 1: $0.99V = V_w$
+\\* Equation 2: $0.98(V - V_w e) = V_w - V_w e$
+\medskip
+\\* $V = \frac{V_w}{0.99}$
+\\* $0.98(\frac{V_w}{0.99} - V_w e) = V_w - V_w e$
+\\* $\frac{0.98}{0.99}V_w - 0.98V_w e= V_w - V_w e$
+\medskip
+\\*Subtract $\frac{0.98}{0.99}V_w$ from both sides and add $V_w e$ to both sides:
+\\* $0.2V_w e = \frac{1/99}V_w$
+\\* $e = \frac{50}{99}$
+\bigskip
+\\* Assuming the question is asking for mass rather than weight:
+\\* Water is still 100\% of the pickles' mass even when it comprises 98\% of the volume.
+\\* Original Mass = 10,000
+\\* Mass after 50/99 of the water evaporates = $\frac{49}{99} \times 10,000 = \frac{490000}{99}$
 \bigskip
 
 
@@ -46,8 +63,8 @@ Professor Bender
 	\\*\textit{Inductive Assumption:}
 	\\*Assume P($n$) holds for n =k, ie $2k \leq 2^k$ for some number $k$.
 	\\*\textit{Inductive Step:}
-	\\*If we add 2 to both sides of the inequality we get:
-	\\*$2k + 2 \leq 2^k + 2 \rightarrow 2(k+1) \leq 2^{k+1}$
+	\\*If we add 2 to the left side of the inequality and multiply by 2 on the right side of the inequality we get:
+	\\*$2k + 2 \leq 2^k \times 2 \rightarrow 2(k+1) \leq 2^{k+1}$
 	\\*Therefore we established predicate P($k$+1).
 	\bigskip
 	\\*Therefore, by the principle of induction, P($n$) holds for any $n$, and we establish the theorem. 
@@ -113,7 +130,7 @@ Professor Bender
 \\*\textbf{You have an $n\times m$ bar of chocolate. Your goal is to separate all of the squares of chocolate. The way that you can break the chocolate is to take a single piece of chocolate (connected component of squares) and break it along one horizontal  or vertical line. What is the minimum number of breaks necessary? Please prove your answer. }
 \smallskip
 \\*\uline{Response}
-\\*The minimum number of breaks necessary to separate all of the squares of chocolate is $n x m - 1$ breaks. There are $n \times m$ squares chocolate and the goal is to separate them all, but you already start with one connected piece of chocolate, so you need a minimum of $n \times m - 1$ breaks to get $n \times m$ pieces.
+\\*The minimum number of breaks necessary to separate all of the squares of chocolate is $n x m - 1$ breaks. There are $n \times m$ squares of chocolate and the goal is to separate them all, but you already start with one connected piece of chocolate, so you need a minimum of $n \times m - 1$ breaks to get $n \times m$ pieces.
 \bigskip
 
 
