@@ -1,0 +1,32 @@
+% !TEX root =  midterm.tex
+
+\newpage
+\addtocounter{problemctr}{1}
+
+{\bf
+Problem \theproblemctr.  (\therelation\xspace points)}
+\\
+
+Let's do some counting. Given a finite set $S$, where $\lvert S \rvert= n$, fill in the blanks below and give a {\bf one-sentence} justification for each.
+
+\vspace{.2in}
+
+\begin{enumerate}[label=(\arabic*),itemsep=2in]
+\item
+Total number of binary relations on $S$:
+\underline{\hspace{27mm} $2^{n^{2}}$ \hspace{27mm}}
+\bigskip
+\\*The binary relation S x S contains n x n, or $n^2$ pairs resulting in a total of $2^{n^{2}}$ binary relations.
+\item
+Number of reflexive binary relations on $S$:
+\underline{{\hspace{26mm} $2^{n^{2} - n}$ \hspace{26mm}}}
+\bigskip
+\\* There are n elements in S meaning there are only n relations on S x S that can be represented as $(a_i, a_i)$ where $a_i$ is an element of S and since a reflexive binary relation requires all n pairs, the total number of reflexive binary pairs is $2^{n^2-n}.$
+\item
+Number of symmetric binary relations on $S$:
+\underline{{\hspace{26mm} $2^{\frac{n^{2} - n}{2}}$ \hspace{26mm}}}
+\bigskip
+\\* If a symmetric binary relations contain the pair $(a_1, a_2)$ then it must also contain the pair $(a_1, a_2)$ meaning that there are $\frac{n^2 - n}{2}$ symmetric binary pairs on S, resulting in a total number of $2^{\frac{n^{2} - n}{2}}$ binary relations.
+\end{enumerate}
+
+\newpage

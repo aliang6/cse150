@@ -1,0 +1,90 @@
+\documentclass[12pt]{article}
+\usepackage[left=0.5in, right=0.5in, top=0.5in, bottom=0.5in]{geometry}
+\usepackage{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+
+\begin{document}
+\begin{flushleft}
+Andy Liang
+
+CSE 150 - Foundations of Computer Science: Honors
+Professor Bender
+\end{flushleft}
+\medskip
+\centerline{\uline{Homework 4}}
+\bigskip\bigskip
+
+\noindent
+\uline{Problem 1:}
+\\*I have twelve books.
+\begin{itemize}
+\item\textbf{In how many ways can I line them up on a single shelf?}
+\\* $12!$
+\item\textbf{In how many ways can I choose seven of them and line them up on a single shelf?}
+\\* ${{12}\choose{7}}!= (\frac{12!}{7!(12-7)!}) = $
+\item\textbf{In how many ways can I choose seven to take to school?}
+\\*${{12}\choose{7}} = \frac{12!}{7!(12-7)!}$
+\end{itemize}
+\bigskip
+
+\noindent
+\uline{Problem 2:}
+\\*An ogre has $n$ captives to eat, one captive per day.
+\begin{itemize}
+\item\textbf{How many ways are there to make a menu for $n$ days?}
+\\* $n!$
+\item\textbf{How many ways are there to pick $k$ captives to freeze them for winter season?}
+\\* ${{n}\choose{k}} = \frac{n!}{k!(n-k)!}$
+\item\textbf{How many ways are there to buy $n$ bottles of sauce for the captives, out of $k$ kinds?}
+\\* ${{k}\choose{n}} = \frac{k!}{n!(k-n)!}$
+\end{itemize}
+\bigskip
+
+\noindent
+\uline{Problem 3:}
+\begin{itemize}
+\item\textbf{An ice-cream vendor sells eleven kinds of ice-cream. In how many different ways can I buy six cones, some or even all of which could be the same?}
+\\* 11 x 11 x 11 x 11 x 11 x 11 = $11^6$ = 1,771,561
+\item\textbf{An ice-cream vendor sells six kinds of ice-cream. In how many different ways can I buy eleven cones, some or even all of which could be the same?}
+\\* 6 x 6 x 6 x 6 x 6 x 6 x 6 x 6 x 6 x 6 x 6 = $6^{11}$ = 362,797,056
+\end{itemize}
+\bigskip
+
+\noindent
+\uline{Problem 4:}
+\begin{itemize}
+\item\textbf{There are 33 children, and they want to divide into three teams of eleven. In how many different ways can this be done?}
+\\* $\frac{33!}{3 * 11}$
+\item\textbf{How many unique permutations exist for the letters in the 1980's band "BANANARAMA"?}
+\\* $\frac{10!}{2! * 5!} = 15,120$
+\end{itemize}
+\bigskip
+
+\noindent
+\uline{Problem 5:}
+\\*\textbf{Which number is bigger: the number of six-digit integers representable as a product of two three-digit integers, or the number of six-digit integers not representable in this form?}
+\\* 
+\bigskip
+
+\noindent
+\uline{Problem 6:}
+\\*\textbf{Among the number 1, 2, ..., $10^{10}$, are there more of those containing the digit 9 in their decimal notation or those with no 9?}
+\medskip
+\\* Number of digits without a 9 = 9 x 9 x 9 x 9 x 9 x 9 x 9 x 9 x 9 x 9 = $9^{10}$ = 3,486,784,401
+\\* Number of digits with a 9 = $10^{10} - 9^{10}$ = 6,513,215,599
+\\* There are more digits among the number 1, 2, ..., $10^{10}$ containing the digit 9 in their decimal notation than those without the digit 9 in their decimal notation.
+\bigskip
+
+\noindent
+\uline{Problem 7:} Professors and Keys
+\\*\textbf{A group of five professors are setting a mathematics competition. When they go home at night, they leave
+their work in a room which has a certain number of locks on the door. Each professor has keys to some, but
+not all of the locks. In fact, any three professors will have enough keys between them to open the door, but
+any two professors will not have enough. What is the smallest number of locks needed, and how many keys
+will each professor have? Provide a proof or a clear explanation to get credit for this problem.}
+\medskip
+\\*The smallest number of locks needed is three and each professor will have three keys. This way, any two professors will only have two keys which is not enough to open the door, but any three professors will have three keys, which is the amount of locks on the door.
+
+\end{document}
