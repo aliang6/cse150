@@ -128,7 +128,7 @@ LaTeX Info: Redefining \] on input line 2740.
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts suppport
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
@@ -187,43 +187,42 @@ LaTeX Font Info:    ... okay on input line 8.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 23.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 24.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
-LaTeX Font Info:    Try loading font information for U+msa on input line 24.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
+LaTeX Font Info:    Try loading font information for U+msa on input line 25.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 24.
+LaTeX Font Info:    Try loading font information for U+msb on input line 25.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+./hw4.tex:62: Undefined control sequence.
+l.62 \\* $f\rac
+               {10!}{(2! x 5!)} =$
+? 
+./hw4.tex:62: Emergency stop.
+l.62 \\* $f\rac
+               {10!}{(2! x 5!)} =$
+End of file on the terminal!
 
-Package amsmath Warning: Foreign command \atopwithdelims;
-(amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 26.
-
-
-Overfull \hbox (20.42758pt too wide) in paragraph at lines 60--62
-[]\OT1/cmr/bx/n/12 How many unique per-mu-ta-tions ex-ist for the let-ters in t
-he 1980's band "BA-NA-NARAMA"? 
- []
-
-[1
-
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2] (./hw4.aux) ) 
+ 
 Here is how much of TeX's memory you used:
- 1749 strings out of 493014
- 21618 string characters out of 6133351
- 86977 words of memory out of 5000000
+ 1745 strings out of 493014
+ 21585 string characters out of 6133351
+ 84977 words of memory out of 5000000
  5303 multiletter control sequences out of 15000+600000
  8698 words of font info for 34 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 27i,3n,26p,219b,145s stack positions out of 5000i,500n,10000p,200000b,80000s
+./hw4.tex:62:  ==> Fatal error occurred, no output PDF file produced!
+f font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  27i,4n,26p,468b,145s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfont
